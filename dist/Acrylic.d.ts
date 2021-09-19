@@ -1,15 +1,14 @@
 import React from 'react';
 declare type Props = {
-    theme?: string;
     blur?: number;
-    position?: ('static' | 'relative' | 'absolute' | 'sticky' | 'fixed');
+    position?: 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
     left?: string | number;
     top?: string | number;
     width?: string | number;
     height?: string | number;
     colorOverlay?: string;
     opacity?: number;
-    borderRadius?: number;
+    borderRadius?: string | number;
     boxShadow?: string;
 };
 declare class Acrylic extends React.Component<Props, {}> {

@@ -11,4 +11,4 @@ function debounce(callback: any, wait: any, context: any = this) {
   }
 }
 
-export default debounce;
+export default debounce

@@ -90,7 +90,7 @@ var Acrylic = /*#__PURE__*/function (_React$Component) {
         self.canvas.style.transform = "translate(-" + window.scrollX + "px, -" + window.scrollY + "px)";
 
         var blurv;
-        self.props.blur ? blurv = self.props.blur : blurv = 0;
+        self.props.blur ? blurv = self.props.blur : blurv = 30;
         StackBlur.canvasRGB(canvas, 0, 0, canvas.width, canvas.height, blurv);
       });
     };
@@ -161,24 +161,26 @@ var Acrylic = /*#__PURE__*/function (_React$Component) {
         left: 0,
         bottom: 0,
         right: 0,
+        borderRadius: borderRadius,
         background: colorOverlay,
         opacity: opacity,
         content: '',
         zIndex: -1
       }
-    }), " ", React.createElement("span", {
+    }), React.createElement("span", {
       style: {
         position: 'absolute',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
+        borderRadius: borderRadius,
         background: "url(" + ImgNoise + ")",
         opacity: opacity / 3,
         content: '',
         zIndex: -2
       }
-    }), " ", this.props.children), " ", React.createElement("span", {
+    }), this.props.children), React.createElement("span", {
       style: {
         position: position,
         left: left,
@@ -191,7 +193,7 @@ var Acrylic = /*#__PURE__*/function (_React$Component) {
         overflow: 'hidden'
       },
       ref: this.blurEl
-    }), " ");
+    }));
   };
 
   return Acrylic;
