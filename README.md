@@ -10,6 +10,8 @@ Inspired by [Fluent Design's Acrylic Material](https://docs.microsoft.com/en-us/
 
 [Sample page](https://yongjun042.github.io/react-acrylic-ts/)
 
+[npm](https://www.npmjs.com/package/react-acrylic-ts)
+
 ## Install
 
 ```bash
