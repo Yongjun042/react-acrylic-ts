@@ -2,6 +2,7 @@ import React from 'react'
 
  import  Acrylic  from 'react-acrylic-ts'
 import 'react-acrylic-ts/dist/index.css'
+import './App.css'
 
 import mt from './mt.jpg'
 
@@ -33,6 +34,7 @@ const App = () => {
       <h1>React Acrylic Ts!</h1>
     </Acrylic>
     <Acrylic
+    className="qwerty dvorzac"
     position = 'fixed'
     opacity = {0.5}
     top = '250px'

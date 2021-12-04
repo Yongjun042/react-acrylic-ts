@@ -17,6 +17,7 @@ type Props = {
   opacity?: number
   borderRadius?: string | number
   boxShadow?: string
+  className?: string
 }
 
 class Acrylic extends React.Component<Props, {}> {
@@ -33,7 +34,8 @@ class Acrylic extends React.Component<Props, {}> {
     opacity: 0.5,
 
     borderRadius: 0,
-    boxShadow: ''
+    boxShadow: '',
+    className: ''
   }
 
   private contentEl: React.RefObject<HTMLElement>
@@ -131,10 +133,11 @@ class Acrylic extends React.Component<Props, {}> {
       colorOverlay = '#fff',
       opacity = 0.5,
       borderRadius = 0,
-      boxShadow = ''
+      boxShadow = '',
+      className = ''
     } = this.props
     return (
-      <span className='js-acrylic'>
+      <span className={'js-acrylic ' + className}>
         <span
           ref={this.contentEl}
           style={{

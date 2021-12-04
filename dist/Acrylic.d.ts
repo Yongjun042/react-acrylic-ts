@@ -10,6 +10,7 @@ declare type Props = {
     opacity?: number;
     borderRadius?: string | number;
     boxShadow?: string;
+    className?: string;
 };
 declare class Acrylic extends React.Component<Props, {}> {
     static defaultProps: {
@@ -23,6 +24,7 @@ declare class Acrylic extends React.Component<Props, {}> {
         opacity: number;
         borderRadius: number;
         boxShadow: string;
+        className: string;
     };
     private contentEl;
     private blurEl;

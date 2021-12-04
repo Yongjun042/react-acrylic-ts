@@ -139,9 +139,11 @@ var Acrylic = /*#__PURE__*/function (_React$Component) {
         _this$props$borderRad = _this$props.borderRadius,
         borderRadius = _this$props$borderRad === void 0 ? 0 : _this$props$borderRad,
         _this$props$boxShadow = _this$props.boxShadow,
-        boxShadow = _this$props$boxShadow === void 0 ? '' : _this$props$boxShadow;
+        boxShadow = _this$props$boxShadow === void 0 ? '' : _this$props$boxShadow,
+        _this$props$className = _this$props.className,
+        className = _this$props$className === void 0 ? '' : _this$props$className;
     return React.createElement("span", {
-      className: 'js-acrylic'
+      className: 'js-acrylic ' + className
     }, React.createElement("span", {
       ref: this.contentEl,
       style: {
@@ -209,7 +211,8 @@ Acrylic.defaultProps = {
   colorOverlay: '#fff',
   opacity: 0.5,
   borderRadius: 0,
-  boxShadow: ''
+  boxShadow: '',
+  className: ''
 };
 
 module.exports = Acrylic;
